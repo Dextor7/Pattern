@@ -56,7 +56,7 @@ public class Pattern {
     }
     public void pattern7(int n){
         for(int i=0;i<=n;i++){
-            for(int)
+            for(int j)
         }
     }
     public static void main(String[] args) {

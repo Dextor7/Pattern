@@ -75,6 +75,6 @@ public class Pattern {
 
     public static void main(String[] args) {
         Pattern inp = new Pattern();
-        inp.pattern8(8);
+        inp.pattern7(8);
     }
 }

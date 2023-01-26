@@ -6,7 +6,7 @@ public class Pattern {
         for (int i=0;i<n;i++){
             for (int j=0;j<n;j++)
             {
-                System.out.print("*");
+                System.out.print("* ");
             }
             System.out.print("\n");
         }
@@ -14,7 +14,7 @@ public class Pattern {
     public void pattern2(int n){
         for(int i=0;i<n;i++){
             for(int j=0;j<=i;j++){
-                System.out.print("*");
+                System.out.print("* ");
             }
             System.out.print("\n");
         }
@@ -23,7 +23,7 @@ public class Pattern {
         for(int i=0;i<n;i++){
             int num = 1;
             for(int j=0;j<=i;j++){
-                System.out.print(num);
+                System.out.print(num +" ");
                 num ++;
             }
             System.out.print("\n");
@@ -32,13 +32,13 @@ public class Pattern {
     public void pattern4(int n){
         for(int i=1;i<=n;i++){
             for(int j=1;j<=i;j++){
-                System.out.print(i);
+                System.out.print(i +" ");
             }
             System.out.print("\n");
         }   
     }
     public void pattern5(int n){
-        for(int i=0;i<=n;i++){
+        for(int i=0;i<n;i++){
             for(int j=0;j<n-i;j++){
                 System.out.print("*");
             }
@@ -46,7 +46,7 @@ public class Pattern {
         }
     }
     public void pattern6(int n){
-        for(int i=0;i<=n;i++){
+        for(int i=0;i<n;i++){
             int num= 1;
             for(int j=0;j<n-i;j++){
                 System.out.print(num);

@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class Pattern {
 
     public void pattern1(int n){
@@ -55,12 +56,25 @@ public class Pattern {
         }
     }
     public void pattern7(int n){
-        for(int i=0;i<=n;i++){
-            for(int j)
+        for(int i=0;i<n;i++){
+            //space
+            for(int j=0;j<n-i-1;j++){                               //Calculating the spaces in the pattern-> n-i-1
+                System.out.print(" ");
+            }
+            //star
+            for(int j=0;j<2*i+1;j++){
+                System.out.print("*");
+            } 
+            //Space
+            for(int j=0;i<n-i-1;i++){
+                System.out.print(" ");
+            }  
+            System.out.print("\n");                                //Calculating the stars in the pattern-> 2*i+1
         }
     }
+
     public static void main(String[] args) {
         Pattern inp = new Pattern();
-        inp.pattern6(5);
+        inp.pattern8(8);
     }
 }

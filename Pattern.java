@@ -66,15 +66,32 @@ public class Pattern {
                 System.out.print("*");
             } 
             //Space
-            for(int j=0;i<n-i-1;i++){
+            for(int j=0;j<n-i-1;j++){
                 System.out.print(" ");
             }  
             System.out.print("\n");                                //Calculating the stars in the pattern-> 2*i+1
         }
     }
+    public void pattern8(int n){
+        for(int i=0;i<n;i++){
+            //space 
+            for(int j=0;j<i;j++){
+                System.out.print(" ");
+            }
+            //star
+            for(int j=0;j<2*n-(2*i+1);j++){
+                System.out.print("*");
+            }
+            //space
+            for(int j=0;j<i;j++){
+                System.out.print(" ");
+            }
+        }
+        System.out.print("\n");
+    }
 
     public static void main(String[] args) {
         Pattern inp = new Pattern();
-        inp.pattern7(8);
+        inp.pattern8(5);
     }
 }
